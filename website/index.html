@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+ <body>
+
+<!-- Start content of application -->
+<div id = "app-content">
+
+  <!-- start invalid message -->
+    <div id="invalidMes">
+      <p id="invalidMesStr"></p>
+      <button id="ok">ok</button>
+    </div>
+  <!-- end invalid message -->
+  
+  <!-- start the right part -->
+  <div class="right">
+    <div class ="holder zip">
+      <input type="text" id="zip" placeholder="enter zip code here">
+    </div>
+    <div class ="holder feel">
+      <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here"></textarea>
+      <button id="generate" type = "submit"> Generate </button>
+    </div>
+
+    <!-- start weather details -->
+    <h2>weather details</h2>
+    <ul class="details">
+      <li><span>city</span><span id="dcity"></span></li>
+      <li><span>temperature</span><span id="dtem"></span></li>
+      <li><span>humidity</span><span id="hum"></span></li>
+      <li><span>cloudy</span><span id="cloud"></span></li>
+      <li><span>wind</span><span id="wind"></span></li>
+    </ul>
+  </div>
+  <!-- end the right part -->
+
+  <!-- start the left part -->
+  <div class="left">
+    <h1 class ="holder headline">
+      Weather Journal App    
+    </h1>
+    <!-- start recent entry -->
+    <div class ="holder entry">
+       <h2 class = "title">Most Recent Entry</h2>
+        <div id = "entryHolder">
+          <div class="entryHolderData">
+            <div id = "temp"></div>
+            <div class="miData">
+              <div id = "city"></div> 
+              <div id = "date"></div>
+            </div>
+            <div>
+              <img id="icon" src="" alt="">
+              <div id = "descr"></div>
+            </div>
+          </div>
+        <div id = "content"></div>
+        </div>
+    <!-- end recent entry -->
+    </div>
+  <!-- end the left part -->
+  </div>
+<!-- end content of application -->
+
+<script src="app.js" type="text/javascript"></script>
+
+</body>
+</html>
